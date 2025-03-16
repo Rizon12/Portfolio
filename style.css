@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+    background-image: url(../../../../Downloads/pexels-stywo-1668246.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: burlywood; 
+    padding: 20px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+header .name{
+    position:absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.2em;
+    color:blue;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.image {
+    float: right;
+    margin: -20px 0 10px 10px; /* Negative top margin to move the image upwards */
+    width: 200px;
+    height: auto;
+    border: 5px solid #555; /* Maintain the border */
+    border-radius: 10px; /* Maintain rounded corners */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /* Maintain box shadow */
+    position: relative;
+}
+
+.image::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* Overlay color */
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 10px; /* Match image rounded corners */
+}
+
+.image:hover::after {
+    opacity: 1; /* Show overlay on hover */
+}
+
+
+section {
+    background-color: rgba(144,238,144,0.7);
+    padding: 20px;
+    margin: 20px 0;
+    border: 2px solid darkgreen;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Styles for all anchor links */
+a {
+    color: yellow; /* Change this to your desired color */
+    text-decoration: none; /* Removes underline */
+}
+
+a:visited {
+    color: yellow; /* Change this to your desired color for visited links */
+}
+
+a:hover {
+    color: #104E8B; /* Change this to your desired color when the link is hovered over */
+    text-decoration: underline; /* Adds underline when hovering */
+}
+
+a:active {
+    color: #1C1C1C; /* Change this to your desired color when the link is active */
+}
